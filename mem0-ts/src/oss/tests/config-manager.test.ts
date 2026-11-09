@@ -441,7 +441,7 @@ describe("ConfigManager", () => {
         llm: {
           provider: "aws_bedrock",
           config: {
-            model: "anthropic.claude-3-sonnet-20240229-v1:0",
+            model: "us.anthropic.claude-sonnet-4-6",
             awsRegion: "us-east-1",
             awsAccessKeyId: "AKIAEXAMPLE",
             awsSecretAccessKey: "secret-example",
@@ -465,7 +465,7 @@ describe("ConfigManager", () => {
         llm: {
           provider: "aws_bedrock",
           config: {
-            model: "anthropic.claude-3-sonnet-20240229-v1:0",
+            model: "eu.anthropic.claude-sonnet-4-6",
             aws_region: "eu-west-1",
             aws_access_key_id: "AKIASNAKE",
             aws_secret_access_key: "snake-secret",
@@ -859,7 +859,7 @@ describe("Memory – LM Studio end-to-end flow", () => {
       llm: {
         provider: "aws_bedrock",
         config: {
-          model: "anthropic.claude-3-sonnet-20240229-v1:0",
+          model: "us.anthropic.claude-sonnet-4-6",
           awsRegion: "us-east-1",
           awsAccessKeyId: "AKIAEXAMPLE",
           awsSecretAccessKey: "secret-example",
@@ -875,7 +875,7 @@ describe("Memory – LM Studio end-to-end flow", () => {
     expect(mockLlmFactory.create).toHaveBeenCalledWith(
       "aws_bedrock",
       expect.objectContaining({
-        model: "anthropic.claude-3-sonnet-20240229-v1:0",
+        model: "us.anthropic.claude-sonnet-4-6",
         awsRegion: "us-east-1",
         awsAccessKeyId: "AKIAEXAMPLE",
         awsSecretAccessKey: "secret-example",
